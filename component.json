@@ -1,6 +1,6 @@
 {
   "name": "mouseenter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "mouseenter shim utility",
   "keywords": ["mouse", "mouseenter", "events"],
   "author": "stagas",
