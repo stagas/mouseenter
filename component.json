@@ -1,0 +1,11 @@
+{
+  "name": "mouseenter",
+  "version": "0.0.1",
+  "description": "mouseenter shim utility",
+  "author": "stagas",
+  "licence": "MIT",
+  "dependencies": {
+    "stagas/within": "*"
+  },    
+  "scripts": ["index.js"]
+}

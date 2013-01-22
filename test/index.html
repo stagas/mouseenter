@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>mouseenter</title>
+    <link rel="stylesheet" href="../build/build.css">
+    <style>
+      div {
+        display: inline-block;
+        padding: 20px;
+        border: 1px solid #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="enterme">Enter me
+      <div id="andme">And me</div>
+    </div>
+    <script src="../build/build.js"></script>
+    <script>
+    var mouseenter = require('mouseenter')
+    mouseenter(document.getElementById('enterme'), function (ev) {
+      console.log('entered', ev.target.textContent)
+    })
+    </script>
+  </body>
+</html>
