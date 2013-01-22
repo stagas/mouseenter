@@ -2,6 +2,7 @@
   "name": "mouseenter",
   "version": "0.0.1",
   "description": "mouseenter shim utility",
+  "keywords": ["mouse", "mouseenter", "events"],
   "author": "stagas",
   "licence": "MIT",
   "dependencies": {
