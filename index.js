@@ -4,6 +4,7 @@
  */
 
 var within = require('within')
+var events = require('event')
 
 module.exports = mouseenter
 
@@ -18,7 +19,7 @@ function mouseenter (el, fn) {
   }
   listeners.push(listener)
   fns.push(fn)
-  el.addEventListener('mouseover', listener)
+  events.bind(el, 'mouseover', listener)
 }
 
 mouseenter.bind = mouseenter
@@ -27,5 +28,5 @@ mouseenter.unbind = function (el, fn) {
   var idx = fns.indexOf(fn)
   if (!~idx) return
   fns.splice(idx, 1)
-  el.removeEventListener('mouseover', listeners.splice(idx, 1)[0])
+  events.unbind(el, 'mouseover', listeners.splice(idx, 1)[0])
 }
